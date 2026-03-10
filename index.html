@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HB SubTracker — Track YouTube Milestones in Discord</title>
+    <meta name="description" content="HB SubTracker is a Discord bot that tracks YouTube subscriber milestones and posts beautiful real-time updates." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <img class="brand-logo" src="HB Sub Tracker Discord bot logo.jpg" alt="HB SubTracker logo" />
+        <span>SubTracker</span>
+      </div>
+      <nav class="nav">
+        <a href="#how">How It Works</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#features">Features</a>
+        <a href="https://discord.com/oauth2/authorize?client_id=1480983284010717324&permissions=2147551232&integration_type=0&scope=bot" class="nav-cta" target="_blank" rel="noopener">Add to Discord</a>
+      </nav>
+      <button class="menu-btn" aria-label="Open navigation">Menu</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Discord Bot</p>
+          <h1>Track YouTube milestones <span class="accent">in real time</span></h1>
+          <p class="subtitle">
+            HB SubTracker keeps your Discord community in sync with every milestone. Instant updates, clean analytics,
+            and a single /track command to get started.
+          </p>
+          <div class="hero-actions">
+            <a href="https://discord.com/oauth2/authorize?client_id=1480983284010717324&permissions=2147551232&integration_type=0&scope=bot" class="btn primary" target="_blank" rel="noopener">Add to Discord</a>
+            <a href="#showcase" class="btn ghost">See it in action</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-live"><span class="dot"></span> Live</span>
+              <span class="stat-number" data-count="1" data-suffix="">1</span>
+              <span class="stat-label">Servers</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-live"><span class="dot"></span> Live</span>
+              <span class="stat-number" data-count="2" data-format="compact">2</span>
+              <span class="stat-label">Channels Tracked</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-live"><span class="dot"></span> Live</span>
+              <span class="stat-number" data-count="0" data-format="compact">0</span>
+              <span class="stat-label">Subs Observed</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-glow"></div>
+          <div class="embed">
+            <div class="embed-head">
+              <div>
+                <p class="embed-title">Subscriber Update for Siu</p>
+                <p class="embed-sub">Milestone reached • Live update</p>
+              </div>
+              <div class="avatar"></div>
+            </div>
+            <div class="embed-body">
+              <div class="field">
+                <span>Previous Sub Count</span>
+                <strong>2,190,000</strong>
+              </div>
+              <div class="field">
+                <span>Current Sub Count</span>
+                <strong>2,200,000</strong>
+              </div>
+              <div class="field wide">
+                <span>Time Elapsed</span>
+                <strong>2 minutes, 28 seconds</strong>
+              </div>
+              <div class="field wide">
+                <span>Average Subs/Hour</span>
+                <strong>243,243 (was 804)</strong>
+              </div>
+            </div>
+            <div class="embed-footer">HB SubTracker • just now</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="steps">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>Invite, track, and receive milestone updates in minutes.</p>
+        </div>
+        <div class="step-grid">
+          <article>
+            <span class="step-num">1</span>
+            <h3>Invite the bot</h3>
+            <p>Add HB SubTracker to your Discord server with the right permissions.</p>
+          </article>
+          <article>
+            <span class="step-num">2</span>
+            <h3>Run /track</h3>
+            <p>Type <code>/track</code> with a YouTube channel handle, name, or ID.</p>
+          </article>
+          <article>
+            <span class="step-num">3</span>
+            <h3>Get updates</h3>
+            <p>Watch clean embeds appear whenever a milestone is hit.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="showcase" class="showcase">
+        <div class="section-head">
+          <h2>See it in action</h2>
+          <p>Designed to be readable at a glance while still packed with insight.</p>
+        </div>
+        <div class="showcase-grid">
+          <div class="showcase-card">
+            <h3>Simple Tracking Setup</h3>
+            <p>One command. Fast autocomplete. No configuration maze.</p>
+            <div class="mini-command">/track channel:@creator</div>
+          </div>
+          <div class="showcase-card">
+            <h3>Milestone Notifications</h3>
+            <p>Every update is formatted with analytics, not noise.</p>
+            <div class="pulse-bar"></div>
+          </div>
+          <div class="showcase-card">
+            <h3>Growth Analytics</h3>
+            <p>Average per day, per hour, and per minute baked right in.</p>
+            <div class="trend">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="section-head">
+          <h2>Powerful features</h2>
+          <p>Everything you need to track channels without the bloat.</p>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Instant setup</h3>
+            <p>No dashboards to configure. Just invite and track.</p>
+          </article>
+          <article>
+            <h3>Milestone detection</h3>
+            <p>Spot spikes, dips, and threshold hits instantly.</p>
+          </article>
+          <article>
+            <h3>Readable embeds</h3>
+            <p>Designed to be useful inside busy Discord channels.</p>
+          </article>
+          <article>
+            <h3>Channel controls</h3>
+            <p>Track different creators in different Discord channels.</p>
+          </article>
+          <article>
+            <h3>Always-on polling</h3>
+            <p>Fast updates with adjustable polling intervals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="start" class="cta">
+        <div>
+          <h2>Ready to start tracking?</h2>
+          <p>Invite HB SubTracker today and never miss a milestone.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="https://discord.com/oauth2/authorize?client_id=1480983284010717324&permissions=2147551232&integration_type=0&scope=bot" class="btn primary" target="_blank" rel="noopener">Add to Discord</a>
+          <a href="#" class="btn ghost">View Commands</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="brand">
+        <img class="brand-logo" src="HB Sub Tracker Discord bot logo.jpg" alt="HB SubTracker logo" />
+        <span>SubTracker</span>
+      </div>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#start">Add to Discord</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+      <p class="footer-note">Track YouTube milestones in Discord with confidence.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
