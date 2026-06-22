@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HB SubTracker — Track YouTube Milestones in Discord</title>
-    <meta name="description" content="HB SubTracker is a Discord bot that tracks YouTube subscriber milestones and posts beautiful real-time updates." />
+    <title>HB SubTracker - Track YouTube Milestones in Discord</title>
+    <meta name="description" content="HB SubTracker is a Discord bot that tracks YouTube subscriber milestones and posts real-time updates." />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -30,8 +31,8 @@
           <p class="eyebrow">Discord Bot</p>
           <h1>Track YouTube milestones <span class="accent">in real time</span></h1>
           <p class="subtitle">
-            HB SubTracker keeps your Discord community in sync with every milestone. Instant updates, clean analytics,
-            and a single /track command to get started.
+            HB SubTracker keeps your Discord community in sync with every milestone. Fast updates, useful analytics,
+            and a single <code>/track</code> command to get started.
           </p>
           <div class="hero-actions">
             <a href="https://discord.com/oauth2/authorize?client_id=1480983284010717324&permissions=2147551232&integration_type=0&scope=bot" class="btn primary" target="_blank" rel="noopener">Add to Discord</a>
@@ -40,17 +41,17 @@
           <div class="hero-stats">
             <div class="stat-card">
               <span class="stat-live"><span class="dot"></span> Live</span>
-              <span class="stat-number" data-count="1" data-suffix="">1</span>
+              <span class="stat-number odometer" data-count="1">1</span>
               <span class="stat-label">Servers</span>
             </div>
             <div class="stat-card">
               <span class="stat-live"><span class="dot"></span> Live</span>
-              <span class="stat-number" data-count="2" data-format="compact">2</span>
+              <span class="stat-number odometer" data-count="2">2</span>
               <span class="stat-label">Channels Tracked</span>
             </div>
             <div class="stat-card">
               <span class="stat-live"><span class="dot"></span> Live</span>
-              <span class="stat-number" data-count="0" data-format="compact">0</span>
+              <span class="stat-number odometer" data-count="0">0</span>
               <span class="stat-label">Subs Observed</span>
             </div>
           </div>
@@ -60,30 +61,30 @@
           <div class="embed">
             <div class="embed-head">
               <div>
-                <p class="embed-title">Subscriber Update for Siu</p>
-                <p class="embed-sub">Milestone reached • Live update</p>
+                <p class="embed-title">Subscriber Update for MrBeast</p>
+                <p class="embed-sub">Milestone reached - Live update</p>
               </div>
-              <div class="avatar"></div>
+              <img class="avatar" src="HB Sub Tracker Discord bot logo.jpg" alt="Channel avatar" />
             </div>
             <div class="embed-body">
               <div class="field">
                 <span>Previous Sub Count</span>
-                <strong>2,190,000</strong>
+                <strong data-embed="prevSub">0</strong>
               </div>
               <div class="field">
                 <span>Current Sub Count</span>
-                <strong>2,200,000</strong>
+                <strong data-embed="currentSub">0</strong>
               </div>
               <div class="field wide">
                 <span>Time Elapsed</span>
-                <strong>2 minutes, 28 seconds</strong>
+                <strong data-embed="elapsed">0 seconds</strong>
               </div>
               <div class="field wide">
                 <span>Average Subs/Hour</span>
-                <strong>243,243 (was 804)</strong>
+                <strong data-embed="avgHour">0</strong>
               </div>
             </div>
-            <div class="embed-footer">HB SubTracker • just now</div>
+            <div class="embed-footer">HB SubTracker - live</div>
           </div>
         </div>
       </section>
@@ -115,7 +116,7 @@
       <section id="showcase" class="showcase">
         <div class="section-head">
           <h2>See it in action</h2>
-          <p>Designed to be readable at a glance while still packed with insight.</p>
+          <p>Readable updates with the numbers your server needs.</p>
         </div>
         <div class="showcase-grid">
           <div class="showcase-card">
@@ -141,7 +142,7 @@
       <section id="features" class="features">
         <div class="section-head">
           <h2>Powerful features</h2>
-          <p>Everything you need to track channels without the bloat.</p>
+          <p>Everything needed to track channels without extra setup.</p>
         </div>
         <div class="feature-grid">
           <article>
@@ -193,7 +194,29 @@
       <p class="footer-note">Track YouTube milestones in Discord with confidence.</p>
     </footer>
 
+    <script>
+      window.__HB_STATS__ = {
+        servers: 2,
+        channelsTracked: 2,
+        subsObserved: '792M'
+      };
+      window.__HB_EMBED__ = {
+        name: 'MrBeast',
+        avatarUrl: '',
+        prevSub: '480M',
+        currentSub: '480M',
+        elapsed: '0 seconds',
+        avgHour: '6,240'
+      };
+    </script>
+    <script>
+      window.odometerOptions = {
+        format: '(,ddd)',
+        duration: 1400,
+        theme: 'default'
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
-
